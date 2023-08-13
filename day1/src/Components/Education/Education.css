@@ -1,0 +1,15 @@
+/* .header{
+    color: red;
+} */
+.Education {
+  /* background-color: red; */
+  padding: 10px;
+  /* width: 55%; */
+}
+
+.Education h2 {
+  flex-direction: row;
+  background-color: black;
+  text-align: center;
+  color: white;
+}

@@ -1,14 +1,13 @@
 /* .header{
     color: red;
 } */
-.LeftCol {
+.Experience {
   /* background-color: red; */
-  width: 55%;
-}
-.LeftCol .header {
+  /* width: 55%; */
   padding: 10px;
 }
-.LeftCol .header h2 {
+
+.Experience h2 {
   flex-direction: row;
   background-color: black;
   text-align: center;

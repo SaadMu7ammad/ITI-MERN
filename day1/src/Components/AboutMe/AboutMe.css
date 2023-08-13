@@ -1,0 +1,15 @@
+/* .header{
+    color: red;
+} */
+.AboutMe {
+  /* background-color: red; */
+  padding: 10px;
+  /* width: 55%; */
+}
+
+.AboutMe h2 {
+  flex-direction: row;
+  background-color: black;
+  text-align: center;
+  color: white;
+}

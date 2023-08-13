@@ -1,14 +1,28 @@
 import './App.css';
-import LeftCol from './Components/LeftCol/LeftCol';
 import Header from './Components/Header/Header';
-import RightCol from './Components/RightCol/RightCol';
+import AboutMe from './Components/AboutMe/AboutMe';
+import Education from './Components/Education/Education';
+import Experience from './Components/Experience/Experience';
+import Image from './Components/Image/Image';
+import Contact from './Components/Contact/Contact';
+import Skills from './Components/Skills/Skills';
 function App() {
   return (
     <>
       <Header />
       <div className="flex-container">
-        <LeftCol />
-        <RightCol />
+        <div className="LeftCol">
+          <>
+            <AboutMe />
+            <Education />
+            <Experience />
+          </>
+        </div>
+        <div className="RightCol">
+          <Image />
+          <Contact />
+          <Skills />
+        </div>
       </div>
     </>
   );

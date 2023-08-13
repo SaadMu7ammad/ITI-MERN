@@ -9,3 +9,12 @@ body{
   display: flex; 
   justify-content: space-between; 
 }
+.LeftCol{
+  width: 100%;
+  padding: 10px;
+}
+.RightCol{
+  width: 60%;
+  padding: 10px;
+
+}

@@ -1,0 +1,15 @@
+.Contact {
+  /* width: 50%; */
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Contact h2{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.Contact i.fa-solid {
+  /* width: 50%; */
+  margin-right: 10px;
+}

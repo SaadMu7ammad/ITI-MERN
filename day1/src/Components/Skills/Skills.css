@@ -1,0 +1,59 @@
+ .Skills h2 {
+  flex-direction: row;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+ .Skills:last-child p {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  margin: 0;
+}
+ .Skills:last-child p span {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  /* color: red; */
+  text-align: justify;
+  height: 10px;
+  width: 40%;
+  border-radius: 5px;
+  background-color: grey;
+}
+ .Skills:last-child p span:after {
+  position: absolute;
+  content: '';
+  text-align: justify;
+  height: 10px;
+  width: 20%;
+  border-radius: 5px;
+  background-color: black;
+}
+ .Skills:last-child :nth-child(2) span:after {
+  width: 50%;
+
+  /* background-color: red; */
+}
+ .Skills:last-child :nth-child(3) span:after {
+  width: 70%;
+
+  /* background-color: red; */
+}
+ .Skills:last-child :nth-child(4) span:after {
+  width: 60%;
+
+  /* background-color: red; */
+}
+ .Skills:last-child :nth-child(5) span:after {
+  width: 50%;
+
+  /* background-color: red; */
+}
+ .Skills:last-child :nth-child(6) span:after {
+  width: 50%;
+
+  /* background-color: red; */
+}
