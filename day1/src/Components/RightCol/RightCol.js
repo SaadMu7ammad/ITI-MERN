@@ -12,11 +12,13 @@ function RightCol() {
       </div>
       <div className="header">
         <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit
-          repudiandae quis quibusdam at saepe totam voluptatem quae, esse, illum
-          iste optio? Deleniti maiores earum ut molestiae eaque, iste nesciunt!
-        </p>
+        <div>
+           
+            <h4> <i class="fa-solid fa-house"> </i>Mansoura</h4>
+            <h4> <i class="fa-solid fa-phone"> </i>043245</h4>
+            <h4> <i class="fa-solid fa-earth"></i>www.saad.com</h4>
+            
+        </div>
       </div>
       <div className="header">
         <h2>Skills</h2>

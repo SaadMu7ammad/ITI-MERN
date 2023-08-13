@@ -79,3 +79,13 @@
 
   /* background-color: red; */
 }
+.RightCol .header:nth-child(2) div  {
+    /* width: 50%; */
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  .RightCol .header:nth-child(2) i.fa-solid{
+    /* width: 50%; */
+  margin-right: 10px;
+  }
