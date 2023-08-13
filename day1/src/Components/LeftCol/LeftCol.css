@@ -1,0 +1,16 @@
+/* .header{
+    color: red;
+} */
+.LeftCol {
+  /* background-color: red; */
+  width: 55%;
+}
+.LeftCol .header {
+  padding: 10px;
+}
+.LeftCol .header h2 {
+  flex-direction: row;
+  background-color: black;
+  text-align: center;
+  color: white;
+}

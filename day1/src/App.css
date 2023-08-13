@@ -1,0 +1,11 @@
+
+body{
+  border: 2px solid black;
+  padding: 20px;
+  width: 800px;
+  margin: 10px auto;
+}
+.flex-container {
+  display: flex; 
+  justify-content: space-between; 
+}
