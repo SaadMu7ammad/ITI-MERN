@@ -1,0 +1,9 @@
+.coin  {
+    /* width: 50%; */
+    text-align: center;
+}
+.coin .image img{
+    margin: auto;
+    width: 50%;
+    /* border-radius: 50%; */
+}

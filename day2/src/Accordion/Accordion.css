@@ -1,0 +1,27 @@
+.rectangle {
+  width: fit-content;
+  margin: auto;
+  /* border: 2px black solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: rgb(26, 142, 142);
+}
+.rectangle .row {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+}
+.hdr{
+    margin: auto;
+    text-align: center;
+}
+/* .rectangle {
+    width: fit-content;
+    margin: auto;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row
+    
+} */
