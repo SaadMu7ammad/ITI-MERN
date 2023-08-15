@@ -18,12 +18,12 @@ function Flip() {
     }
     if (c === 10) {
       // console.log('object');
-      // set('out of 0 flippps there have been 0 heads and 0 tails ');
+      // console.log('object');
+      //  set('out of 0 flippps there have been 0 heads and 0 tails ');
       hidePic('none');
       setTails(0);
       setHeads(0);
       inc(0);
-      // console.log(c);
     } else if (val === t) {
       set(h);
       inc(++c);
