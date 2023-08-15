@@ -17,13 +17,13 @@ function Flip() {
       hidePic('block');
     }
     if (c === 10) {
-      console.log('object');
-      set('out of 0 flips there have been 0 heads and 0 tails ');
+      // console.log('object');
+      // set('out of 0 flippps there have been 0 heads and 0 tails ');
       hidePic('none');
       setTails(0);
       setHeads(0);
       inc(0);
-      console.log(c);
+      // console.log(c);
     } else if (val === t) {
       set(h);
       inc(++c);
@@ -38,7 +38,7 @@ function Flip() {
   return (
     <div className="coin">
       <div className="image">
-        <img src={val} style={{ display: status }}></img>
+        <img src={val} style={{ display: status } }alt="img not found"></img>
       </div>
       <button onClick={toggle}>flip</button>
       <p>
