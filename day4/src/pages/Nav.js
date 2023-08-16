@@ -1,9 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { showFilter } from "./Products.js";
-
 function Nav() {
     return (
-
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Navbar</a>

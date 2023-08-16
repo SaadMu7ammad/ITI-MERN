@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Card from '../Components/Card';
 import axios from 'axios';
 import '../Components/style.css';
@@ -9,19 +9,17 @@ function Products() {
   let temp = [];
   function showFilterNorender(e) {
     console.log(e.target.value);
-    //   setSelect(e.target.value);
     showFilter(e.target.value);
   }
-  async function showFilter(x) {
-    console.log('showFilter');
-    console.log(x);
+  async function showFilter(filterVal) {
+    console.log(filterVal);
     // async function getData() {
     // http call axios  api
     var response = await axios.get('https://dummyjson.com/products');
     console.log(response.data.products);
 
     response.data.products.map((item) => {
-      if (item.category == x) {
+      if (item.category == filterVal) {
         temp.push(item);
       }
     });
