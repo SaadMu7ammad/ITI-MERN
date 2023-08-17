@@ -1,0 +1,30 @@
+.FilmsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cellphone-container {
+  width: 60%;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #002356;
+  color: white;
+  font-weight:bold ;
+}
