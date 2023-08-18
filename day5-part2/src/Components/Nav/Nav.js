@@ -4,29 +4,29 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
 var countFavourite=useSelector((state)=>state.AddFavSlice.AddedFav)
-var CartShow=useSelector((state)=>state.AddFavSlice.cart)
-    function clicked() {
-      console.log('clicked');
-      console.log(CartShow);
-      
-}
+// var CartShow=useSelector((state)=>state.AddFavSlice.cart)
+//     function clicked() {
+//       console.log('clicked');
+//       console.log(CartShow);
+
+// }
   return (
     <nav>
       <ul>
         <NavLink to='Home'>
-          <i className={`fa fa-home active`} onClick={clicked}></i>
+          <i className={`fa fa-home active`} ></i>
         </NavLink>
         <NavLink>
-          <i className={`fa fa-search active`}onClick={clicked}></i>
+          <i className={`fa fa-search active`}></i>
         </NavLink>
         <NavLink>
-          <i className={`fa fa-play-circle-o active`}onClick={clicked}></i>
+          <i className={`fa fa-play-circle-o active`}></i>
         </NavLink>
         <NavLink>
-          <i className={`fa fa-share active`}onClick={clicked}></i>
+          <i className={`fa fa-share active`}></i>
         </NavLink>
         <NavLink to='Favourite'>
-          <i className={`fa fa-heart active`} onClick={clicked}style={{color:"white"}}>{countFavourite} </i>
+          <i className={`fa fa-heart active`} style={{color:"white"}}>{countFavourite} </i>
         </NavLink>
       </ul>
     </nav>

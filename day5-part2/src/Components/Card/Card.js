@@ -24,7 +24,6 @@ function Card(props, favpage) {
             src={`https://image.tmdb.org/t/p/w500/${props.data[0].poster_path}`}
             alt="not found"
           />
-          {/* <p>{props.data.id }</p> */}
         </div>
         <div className="info">
           <h1>{props.data[0].title}</h1>
@@ -49,7 +48,7 @@ function Card(props, favpage) {
         </button>
       )}
       {props.data[1] == true && (
-        <>
+        <div className='btns'>
           <button
             onClick={() => {
               addFavourite(props.data[0]);
@@ -64,7 +63,7 @@ function Card(props, favpage) {
           >
             -
           </button>
-        </>
+        </div>
       )}
       {/* {
       

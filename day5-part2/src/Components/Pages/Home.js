@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
-
 import React from 'react';
 import Card from '../Card/Card'
-import Nav from '../Nav/Nav';
-
 
 function Home() {
   useEffect(() => {
@@ -22,9 +18,9 @@ function Home() {
     console.log(res.data.results);
     res.data.results.forEach((item) => {
       if (
-        item.title != 'No Hard Feelings' &&
-        item.title != 'Barbie' &&
-        item.title != 'Fast X' &&
+        item.title !== 'No Hard Feelings' &&
+        item.title !== 'Barbie' &&
+        item.title !== 'Fast X' &&
         item.title !== 'Resident Evil: Death Island' &&
         item.title !== 'Heart of Stone' &&
         item.title !== 'Fear the Night' &&
@@ -41,7 +37,6 @@ function Home() {
   }
   return (
     <>
-      {/* <Nav></Nav> */}
       <div className="FilmsContainer">
         {films
           ? films.map((item, index) => <Card key={index} data={[item,false]} />)
