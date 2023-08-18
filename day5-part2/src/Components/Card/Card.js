@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
 import './Card.css';
 import { useDispatch } from 'react-redux';
 import { upCount, addToFav,downCount,removeFromFav } from '../../Redux/Slices/AddFavSlice';
 
-function Card(props, favpage) {
+function Card(props, favpage) {//favpage it false means we are in the home page not in the favourite page
   // let favCart = []
-  // let [favCart,setFavCart]=useState([])
+  // let [favCart,setFavCart]=useState([])//we cant use it here coz useState acts as local not global
   var dispatch = useDispatch();
-  // console.log(typeof props.data[1]);
   function addFavourite(info) {
     dispatch(upCount());
     dispatch(addToFav(info));

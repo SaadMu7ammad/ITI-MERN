@@ -6,7 +6,6 @@ import Card from '../Card/Card'
 function Home() {
   useEffect(() => {
     getFilms();
-    console.log('hello');
   }, []);
   let [films, setFilms] = useState([]);
 

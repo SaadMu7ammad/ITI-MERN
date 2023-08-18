@@ -8,18 +8,13 @@ const AddFavSlice = createSlice({
   },
   reducers: {
     upCount: function (state, action) {
-      // state.c+=action.payload
       state.AddedFav += 1;
     },
     downCount: function (state, action) {
-      // state.c+=action.payload
       state.AddedFav -= 1;
-      console.log(state.AddedFav);
+      // console.log(state.AddedFav);
     },
-    
     addToFav: function (state, action) {
-      
-      // state.cart.push(action.payload)
       const indx = state.cart.findIndex((item) => item.id === action.payload.id)
       if (indx === -1) {
         action.payload.quantityFav = 1;
@@ -28,26 +23,16 @@ const AddFavSlice = createSlice({
         
         state.cart[indx].quantityFav++;
       }
-      // downCount: function (state, action) {
-      //   state.c -= action.payload;
-      // },
-
     },
     removeFromFav: function (state, action) {
-      
-      // state.cart.push(action.payload)
       const indx = state.cart.findIndex((item) => item.id === action.payload.id)
       if (indx !== -1) {
       
         state.cart[indx].quantityFav--;
-        if (state.cart[indx].quantityFav == 0) {
+        if (state.cart[indx].quantityFav === 0) {
           state.cart.splice(indx,1)
         }
       }
-      // downCount: function (state, action) {
-      //   state.c -= action.payload;
-      // },
-
     }
   }
 });
