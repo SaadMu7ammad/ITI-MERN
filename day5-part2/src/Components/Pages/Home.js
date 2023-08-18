@@ -19,7 +19,7 @@ function Home() {
     const res = await axios.get(
       'https://api.themoviedb.org/3/movie/popular?api_key=7a1c19ea3c361a4d3cc53eb70ef8298c'
     );
-    // console.log(res.data.results);
+    console.log(res.data.results);
     res.data.results.forEach((item) => {
       if (
         item.title != 'No Hard Feelings' &&
@@ -30,12 +30,12 @@ function Home() {
         item.title !== 'Fear the Night' &&
         item.title !== 'No Hard Feelings'
       ) {
-        temp.push({ title: item.title, poster_path: item.poster_path });
+        temp.push({ title: item.title, poster_path: item.poster_path,id:item.id,quantityFav:0 });
       }
       // console.log(title);
     });
     // temp.forEach((item) => {
-    //   console.log(item.title);
+    //   console.log(item);
     // });
     setFilms([...temp]);
   }
@@ -44,7 +44,7 @@ function Home() {
       {/* <Nav></Nav> */}
       <div className="FilmsContainer">
         {films
-          ? films.map((item, index) => <Card key={index} data={item} />)
+          ? films.map((item, index) => <Card key={index} data={[item,false]} />)
           : null}
       </div>
     </>

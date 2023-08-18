@@ -4,8 +4,11 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
 var countFavourite=useSelector((state)=>state.AddFavSlice.AddedFav)
+var CartShow=useSelector((state)=>state.AddFavSlice.cart)
     function clicked() {
-    console.log('clicked');
+      console.log('clicked');
+      console.log(CartShow);
+      
 }
   return (
     <nav>
