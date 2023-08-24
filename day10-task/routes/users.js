@@ -41,7 +41,7 @@ router.get('/:username', (req, res, next) => {
   // res.send('logged successfully');
   // res.send("hello wfjs;a")
   Users.find({ username: req.params.username }).then((result) => {
-    // console.log(result);
+    console.log(result);
     res.send(result);
   });
 });

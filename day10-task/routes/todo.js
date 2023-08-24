@@ -30,7 +30,7 @@ router.patch('/:todoId', (req, res, next) => {
     todo
       .updateOne({ _id: req.params.todoId },req.body)
       .then((result) => {
-        // console.log(result);
+        console.log(result);
         res.send(result);
       });
 });
